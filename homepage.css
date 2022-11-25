@@ -1,0 +1,271 @@
+.name{
+    background-color:white;
+    padding: 20px;
+    color:rgb(60, 60, 221);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.navbar{
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(101, 101, 240);
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow:0px 7px 27px 0px black;
+    
+    
+}
+.navbar ul li 
+{
+    display: inline-block;
+    padding-left: 100px;
+    justify-content: center;
+    list-style: none;
+    margin:10px 0;
+ 
+    
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s all linear;
+    font-size: 20px;
+    display: flex;
+
+}
+
+.navbar ul li a:hover{
+    color: black;
+    text-shadow: black;
+    
+}
+.slogan{
+    color:rgb(101, 101, 240);
+padding-top:80px ;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px black;
+
+}
+.h{
+    color: rgb(255, 255, 8);
+    font:bold;
+    font-size: 50px;
+}
+
+
+.button-color{
+    display: inline-block;
+    margin: 30px 0px 0px 20px;
+}
+.button{
+    padding: relative;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100px;
+    transition: 1s all ease;
+    color: rgb(61, 61, 230);
+    border: 4px solid rgb(61, 61, 230);
+    border-radius: 100px;
+    padding: 25px;
+    transform: scale(1);
+    cursor: pointer;
+}
+.button a{
+    text-decoration: none;
+    color: rgb(61, 61, 230);
+}
+.button:hover
+{
+ transform: scale(1.1);  
+}
+.row{
+    margin: 0;
+    align-items: center;
+}
+.logo{
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+   margin-top: 150px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.circle {
+    transform: rotate(0deg);
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.footer {
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(101, 101, 240);
+    padding: 80px 0px;
+    margin-top: 48px;
+    box-shadow: 0px 7px 27px 10px black;
+    position: relative;
+    
+}
+.footer-slogan {
+
+
+display: block;
+color: white;
+font-family: Arial;
+
+
+}
+.footer-miage{
+   
+    margin-bottom: 30px;
+    bottom: 4px;
+    padding-left: 50px;
+
+}
+.row
+{
+    margin:0px;
+  
+}
+
+
+
+.warpper
+{
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 70px;
+    margin-top: 40px;
+}
+.warpper .icon{
+margin:0 20px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: relative;
+z-index: 2;
+cursor: pointer;
+transition: all 0.4s cubic-bezier(0.68, -0, -55, 265, 1.55) ;
+}
+
+
+.warpper .icon span{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0px 10p 10px rgba(0,0,0,0,1);
+    transition: all 0.4s cubic-bezier(0,68,-0,265,1.55);
+}
+
+.warpper .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+
+.warpper .icon .tooltype{
+    position:absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px ;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0,1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0,68,-0,265,1.55);
+}
+
+.warpper .icon:hover .tooltype{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+   
+}
+
+.warpper .icon .tooltype::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform:translateX(-50%) rotate(54deg) ;
+
+}
+.warpper .icon:hover span,
+.warpper .icon:hover .tooltype{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0,4);
+}
+.warpper .twitter:hover span,
+.warpper .twitter:hover .tooltype,
+.warpper .twitter:hover .tooltype::before{
+    background:#46c1f6 ;
+}
+.warpper .facebook:hover span,
+.warpper .facebook:hover .tooltype,
+.warpper .facebook:hover .tooltype::before{
+    background:#3B5999 ;
+}
+.warpper .youtube:hover span,
+.warpper .youtube:hover .tooltype,
+.warpper .youtube:hover .tooltype::before{
+    background: #e1306c;
+}
+.warpper .whatsapp:hover span,
+.warpper .whatsapp:hover .tooltype,
+.warpper .whatsapp:hover .tooltype::before{
+    background:#008000;
+}
+.warpper .icon:hover span{
+    color: white;
+}
+.footer{
+    background-color: #3B5999;
+    padding: 20px;
+}
+.col-md-3{
+    color: #fff;
+   padding-top: 40px;
+}
+.col-md-3 a{
+    text-decoration: none;
+    color: black
+}
+.copyright{
+    padding: 5px;
+    background:black ;
+    
+}
+b{
+    color: #fff;
+    justify-content:center ;
+    display: flex;
+}
